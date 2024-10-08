@@ -1,0 +1,21 @@
+.suscripcion{
+    background-color: $bright-green;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    &__main{
+        width: 60%;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;justify-content: space-between;
+    }
+    &__title{
+        margin-top: 1rem;
+        font-size: $font-medium;
+        color: $background-post;
+    }
+    &__aside{
+        align-self: self-end;
+        padding-bottom: 1rem;
+    }
+}

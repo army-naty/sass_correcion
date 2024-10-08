@@ -1,0 +1,32 @@
+// Container para dar flexbox horizontal
+.h-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 60%;
+  padding-top: 1rem;
+}
+
+// Contenedor tipo aside con dirección en columnas
+.aside-container {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+// section container estructura
+.section {
+  padding: 2rem 5rem;
+}
+.suscripcion{
+  height: 12rem;
+  margin: 5rem;
+}

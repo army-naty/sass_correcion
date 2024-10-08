@@ -1,0 +1,42 @@
+.btn {
+  border: 1px solid $gray;
+  border-radius: 5px;
+  padding: 0.4rem 0.5rem;
+  margin: 0.3rem 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  &--no-border{
+    border-width: 0;
+  }
+  &--wide { 
+    width: 30%;
+  }
+  &__img {
+    padding: 0 1rem;
+    height: 32px;
+  }
+  &--google{
+    background-color: $background-post;
+  }
+  &--login{
+    height: 3rem;
+    background-color: $bright-green;
+    color: $background-post;
+    font-weight: 700;
+  }
+  &--suscripcion{
+    height: 3rem;
+    width: 15rem;
+    background-color: $gray;
+    color: $background-post;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  &__text--bold{
+    font-weight: 700;
+    color:$black;
+  }
+}

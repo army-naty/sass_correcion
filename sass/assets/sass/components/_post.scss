@@ -1,0 +1,97 @@
+// BEM Post Vertical
+.v-post {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  &__date {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  &__img {
+    border-radius: $border-rounded;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    width: 100%;
+  }
+  &__title{
+    font-weight: 700;
+  }
+  &--small{
+    width: 45%;
+    .v-post__img{
+      height: 15rem;
+    }
+  }
+}
+// BEM Post Horizontal
+.h-post {
+  display: flex;
+  flex-direction: row;
+  height: $horizontal-post-height;
+  &:not(:first-of-type) {
+    padding-top: 1rem;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  &__img {
+    height: 100%;
+    border-radius: 8px;
+    margin-right: 1rem;
+    width: 8.5rem;
+    object-fit: cover;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  &__title{
+    font-weight: 700;
+  }
+}
+.post-full-screen {
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: $gray;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  border-radius: $border-rounded;
+  @include padding-4-sides(1.5rem, 1.5rem);
+  
+  &__img { 
+    display: inline-block;
+    justify-self: center;
+    border-radius: $border-rounded;
+    margin-inline: auto;
+    width: 80%;
+  }
+}
+.section{
+  &__title{
+    margin: 0 4rem;
+    width: 100%;
+    font-size: 28px;
+  }
+  &--with-border{
+    border-top: solid 2px #CCCCCC;
+  }
+}
+.aside-container{
+  &__title{
+    margin: 0 4rem;
+    width: 100%;
+    font-size: 28px;
+    padding: 1rem 0;
+  }
+}  
+.posts-container{
+  &__title{
+    width: 100%;
+    font-size: 28px;
+  }
+}

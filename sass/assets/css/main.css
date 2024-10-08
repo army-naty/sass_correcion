@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #171717;
+  font-weight: 500;
+}
+
+footer {
+  border-top: solid 2px #CCCCCC;
+}
+
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.header {
+  padding: 2rem 5rem;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.8666666667);
+}
+
+.h-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 60%;
+  padding-top: 1rem;
+}
+
+.aside-container {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: 2rem 5rem;
+}
+
+.suscripcion {
+  height: 12rem;
+  margin: 5rem;
+}
+
+.form {
+  padding: 3rem 1.5rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5rem;
+}
+.footer__text {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.nav {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__text {
+  color: #000000;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+.nav__link {
+  padding-left: 1.875rem;
+  text-decoration: none;
+  color: rgba(41, 44, 51, 0.8941176471);
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 5rem;
+}
+.logo__img {
+  height: 55px;
+  width: 55px;
+  border-radius: 4px;
+}
+.logo__title {
+  font-weight: 700;
+  font-size: 24px;
+  padding-left: 1rem;
+}
+
+.suscripcion {
+  background-color: #02A724;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.suscripcion__main {
+  width: 60%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.suscripcion__title {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+.suscripcion__aside {
+  align-self: self-end;
+  padding-bottom: 1rem;
+}
+
+.v-post {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.v-post__date {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.v-post__img {
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  width: 100%;
+}
+.v-post__title {
+  font-weight: 700;
+}
+.v-post--small {
+  width: 45%;
+}
+.v-post--small .v-post__img {
+  height: 15rem;
+}
+
+.h-post {
+  display: flex;
+  flex-direction: row;
+  height: 8rem;
+}
+.h-post:not(:first-of-type) {
+  padding-top: 1rem;
+}
+.h-post__content {
+  display: flex;
+  flex-direction: column;
+}
+.h-post__img {
+  height: 100%;
+  border-radius: 8px;
+  margin-right: 1rem;
+  width: 8.5rem;
+  object-fit: cover;
+}
+.h-post__date {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.h-post__title {
+  font-weight: 700;
+}
+
+.post-full-screen {
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: rgba(221, 221, 221, 0.8666666667);
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.5rem;
+}
+.post-full-screen__img {
+  display: inline-block;
+  justify-self: center;
+  border-radius: 0.5rem;
+  margin-inline: auto;
+  width: 80%;
+}
+
+.section__title {
+  margin: 0 4rem;
+  width: 100%;
+  font-size: 28px;
+}
+.section--with-border {
+  border-top: solid 2px #CCCCCC;
+}
+
+.aside-container__title {
+  margin: 0 4rem;
+  width: 100%;
+  font-size: 28px;
+  padding: 1rem 0;
+}
+
+.posts-container__title {
+  width: 100%;
+  font-size: 28px;
+}
+
+.categoria {
+  border-radius: 0.5rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.categoria:not(:first-of-type) {
+  margin-top: 2rem;
+}
+.categoria__img {
+  height: 100%;
+  margin-left: 2rem;
+  object-fit: cover;
+}
+.categoria__text {
+  font-size: 2rem;
+  margin-right: 1rem;
+  text-align: right;
+  color: #ffffff;
+  font-weight: 700;
+}
+.categoria--html {
+  background-color: #E93E30;
+}
+.categoria--js {
+  background-color: #F7E018;
+}
+.categoria--css {
+  background-color: #299ED5;
+}
+.categoria--react {
+  background-color: rgba(41, 44, 51, 0.8941176471);
+}
+.categoria--vue {
+  background-color: #67C770;
+}
+.categoria--bootstrap {
+  background-color: #563D7C;
+}
+.categoria__text--black {
+  color: #171717;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.btn {
+  border: 1px solid rgba(221, 221, 221, 0.8666666667);
+  border-radius: 5px;
+  padding: 0.4rem 0.5rem;
+  margin: 0.3rem 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.btn--no-border {
+  border-width: 0;
+}
+.btn--wide {
+  width: 30%;
+}
+.btn__img {
+  padding: 0 1rem;
+  height: 32px;
+}
+.btn--google {
+  background-color: white;
+}
+.btn--login {
+  height: 3rem;
+  background-color: #02A724;
+  color: white;
+  font-weight: 700;
+}
+.btn--suscripcion {
+  height: 3rem;
+  width: 15rem;
+  background-color: rgba(221, 221, 221, 0.8666666667);
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+.btn__text--bold {
+  font-weight: 700;
+  color: #000000;
+}
+
+input[type=text],
+input[type=url],
+input[type=password],
+input[type=email],
+input[type=number],
+input[type=date] {
+  width: 30%;
+  height: 2rem;
+  padding: 1.5rem 0.4rem;
+  border: 1px solid rgba(221, 221, 221, 0.8666666667);
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
+input[type=text].input--wide,
+input[type=url].input--wide,
+input[type=password].input--wide,
+input[type=email].input--wide,
+input[type=number].input--wide,
+input[type=date].input--wide {
+  width: 100%;
+}
+
+.user {
+  display: flex;
+  margin-top: 0.8rem;
+  flex-direction: row;
+  align-self: baseline;
+  align-items: center;
+  height: 3rem;
+}
+.user__img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-right: 1rem;
+}
+.user__img--small {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 1rem;
+}
+.user__text {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.user__text--small {
+  font-size: 1rem;
+}
+
+html, body {
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

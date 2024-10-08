@@ -1,0 +1,31 @@
+// BEM Pie de posts (info usuario)
+.user {
+  display: flex;
+  margin-top: 0.8rem;
+  flex-direction: row;
+  align-self: baseline;
+  align-items: center;
+  height: 3rem;
+
+  &__img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin-right: 1rem;
+    &--small{
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      margin-right: 1rem;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    &--small{
+      font-size: 1rem;
+    } 
+  }
+}

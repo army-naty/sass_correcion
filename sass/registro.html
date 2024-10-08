@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- inicio nav -->
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <img class="logo__img" src="./assets/img/logos/adl.png" alt="logo adl"/>
+          <h1 class="logo__title">Blog FrontEnd</h1>
+        </div>
+        <ul class="nav__links">
+          <li><a href="./index.html" class="nav__link">Home</a></li>
+          <li><a href="./login.html" class="nav__link">Login</a></li>
+          <li><a href="./registro.html" class="nav__link">Signup</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form action="" class="form">
+      <h2>Registrate ¡Es gratis!</h2>
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+      <input type="text" name="apellido" id="apellido" placeholder="Apellido" />
+      <input type="email" name="email" id="email" placeholder="Email" />
+      <input type="password" name="password" id="password" placeholder="Contraseña"/>
+      <input type="password" name="password2"id="password2" placeholder="Confirma tu contraseña"/>
+      <a class="btn btn--google btn--wide btn__text--bold" href="/login.html">
+        <img src="./assets/img/logos/google.png" alt="Logo de google" class="btn__img"/>Registrarse con Google</a>
+      <a class="btn btn--no-border btn--wide" href="/login.html">¿Ya tienes una cuenta?<span class="btn__text--bold">Inicia sesión</span></a>
+    </form>
+  </body>
+</html>

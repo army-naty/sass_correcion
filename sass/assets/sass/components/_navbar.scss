@@ -1,0 +1,39 @@
+.navbar {
+    background-color: $navbar-bg-color;
+    padding: 1rem;
+
+    &__logo {
+        @include flex-center;
+        gap: 0.5rem;
+        color: $navbar-link-color;
+
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+
+    &__links {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+
+        li {
+            a {
+                color: $navbar-link-color;
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover {
+                    color: $navbar-link-hover-color;
+                }
+            }
+        }
+    }
+}
